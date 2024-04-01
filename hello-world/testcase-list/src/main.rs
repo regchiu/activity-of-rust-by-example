@@ -17,6 +17,7 @@ impl fmt::Display for List {
             // For every element except the first, add a comma.
             // Use the ? operator to return on errors.
             if count != 0 { write!(f, ", ")?; }
+            // Activity
             write!(f, "{}: {}", count, v)?;
         }
 
